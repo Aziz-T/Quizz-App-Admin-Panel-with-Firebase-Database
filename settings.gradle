@@ -1,0 +1,2 @@
+rootProject.name='QuizzAppAdminPanel'
+include ':app'

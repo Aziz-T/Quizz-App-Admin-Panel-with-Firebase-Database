@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:title="@string/app_name"/>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit1"
+        android:layout_below="@id/spinner"
+        android:layout_margin="5dp"
+        android:hint="Soru yazınız."
+        android:textColorHint="#000000"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edit2"
+        android:layout_below="@id/edit1"
+        android:layout_margin="5dp"
+        android:hint="Seçenek 1 yaziniz."
+        android:layout_alignParentLeft="true"
+        android:textColorHint="#000000"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edit3"
+        android:layout_below="@id/edit1"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:hint="seçenek 2 yaziniz"
+        android:textColorHint="#000000"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edit4"
+        android:layout_below="@id/edit3"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:hint="Seçenek 3 yaziniz."
+        android:textColorHint="#000000"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edit5"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit3"
+        android:layout_margin="5dp"
+        android:hint="Seçenek 4 yaziniz"
+        android:textColorHint="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit6"
+        android:layout_below="@id/edit5"
+        android:layout_margin="5dp"
+        android:hint="Doğru cevabi yaziniz."
+        android:textColorHint="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit7"
+        android:layout_below="@id/edit6"
+        android:layout_margin="5dp"
+        android:hint="setNo giriniz."
+        android:textColorHint="#000000"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pushButton"
+        android:layout_margin="5dp"
+        android:background="#f4d5e2"
+        android:layout_below="@id/edit7"
+        android:text="Soru Ekle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/kategoriSets"
+        android:layout_below="@id/pushButton"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:hint="Kategori Sets Sayisi"
+        android:textColorHint="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/kategoriUrl"
+        android:layout_below="@id/kategoriSets"
+        android:layout_margin="5dp"
+        android:hint="Kategori Url"
+        android:textColorHint="#000000"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/kategoriButon"
+        android:layout_margin="5dp"
+        android:background="#f4d5e2"
+        android:layout_below="@id/kategoriUrl"
+        android:text="Kategori Ekle"/>
+
+
+</RelativeLayout>
